@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color:rgb(247, 242, 236);">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
 
@@ -22,7 +23,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li id="profile" class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-user"></span>
+                        <!-- <span class="glyphicon glyphicon-user"></span> -->
                         <ul class="dropdown-menu">
                             <li><a id="name" class="dropdown-item" href="#"> </a></li>
                             <li><a id="email" class="dropdown-item"> </a></li>
@@ -32,37 +33,36 @@
                 </li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
             </ul>
-
-            <div style="padding: 10px;">
-                <ul class="navbar-nav mr-auto ml-auto">
-                    <form class="form-inline my-2 my-lg-0 my-lg-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="search..." aria-label="Search"
-                            style="width: 500px;">
-                        <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </ul>
-            </div>
         </div>
     </nav>
     <br>
-    <p><strong style="font-size: 50px; margin: 20px;">Account Detail</strong></p>
-    <div class="container" style="width:320px;padding: 10px;
-    border: 5px  black;margin: 50;border-radius: 5px;">
-        <div class="card" style="width:400px">
-            <img class="rounded-circle" src="user.jpeg"  width="304" height="236">
+    <p><strong style="font-size: 25px; margin: 20px;">Profile Details</strong></p>
+
+    <div class="container shadow p-3 mb-5 bg-black rounded" style="width:420px;
+    background-color: white;padding-top: 20px;padding-bottom: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;margin-left: 100px;margin-top: 40px;">
+
+        <div class="card">
+
             <br>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <p class="card-title"> <strong>UserName : </strong></p>
+            <ul style="margin-top: 1px;" class="list-group">
+                <li style="border-style: hidden;" class="list-group-item">
+                    <img style="background-color: blueviolet; margin-left: 60px;" src="user.jpeg" class="img-circle"
+                        width="250" height="150">
+                    <i class="material-icons " style="font-size:36px; ">add_a_photo</i>
+                    <p style="margin-left: 140px; margin-top: 10px; font-size: 30px;" class="card-title"> </p>
+
                 </li>
-                <li class="list-group-item">
+                <li style="margin-top: 20px; border-style: hidden;" class="list-group-item">
                     <span style="font-size: 130%;" class="glyphicon glyphicon-envelope pull-right"></span>
-                    <p class="card-email"><strong>Email : </strong></p>
+                    <p style="font-size: 150%;" class="card-email"><strong>Email : </strong></p>
                 </li>
-                <li class="list-group-item">
+                <li style="margin-top: 20px; border-style: hidden;" class="list-group-item">
                     <span style="font-size: 130%;" class="glyphicon glyphicon-edit pull-right"></span>
-                    <span style="padding-right: 50px; font-size: 150%;" class="glyphicon glyphicon-earphone  pull-right"></span>
-                    <p class="card-phone"><strong>Contact : </strong></p>
+                    <span style="padding-right: 50px; font-size: 150%;"
+                        class="glyphicon glyphicon-earphone  pull-right"></span>
+                    <p style="font-size: 150%;" class="card-phone"><strong>Contact : </strong></p>
                 </li>
             </ul>
         </div>
@@ -70,6 +70,12 @@
     <div id="result">
     </div>
     <p id="print"></p>
+
+
+    <footer style="background-color: grey; padding: 80px; color: white; margin-top: 200px;">
+        <p>Footer</p>
+    </footer>
+
 </body>
 
 </html>
