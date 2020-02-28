@@ -1,0 +1,231 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="my_jquery_functions.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner>.item>img {
+            width: 540px;
+            height: 240px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(204, 230, 238); padding: 25px;">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Namma Adda</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li id="profile" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="sr-only"></span>
+                        <ul class="dropdown-menu">
+                            <li><a id="name" class="dropdown-item" href="#"> </a></li>
+                            <li><a id="email" class="dropdown-item"> </a></li>
+                            <li><a style="color: blue ;" id="detail" class="dropdown-item" href="demo2.html">view
+                                    detail...</a></li>
+                        </ul>
+                </li>
+                <li id="myBtn"><a href="#"><span></span> sign-in</a></li>
+            </ul>
+
+            <div style="padding: 10px;">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <form class="form-inline my-2 my-lg-0 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="search..." aria-label="Search"
+                            style="width: 500px;">
+                        <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div style="column-gap: 20px;" class="row">
+        <div style="width: 48%; background-color: white;margin-left: 70px;border-radius: 8px;
+               padding-bottom: 2px; margin-bottom: 30px; float:left;padding-top: 1px;height: 280px;box-shadow: 0 5px 15px grey"
+            class="container col-xs-6">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol style="bottom: -12px;" class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div style="width:100%;height: 240px;" class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img class="img-rounded" src="" id="banner1" style="width: 100%;">
+                        <div style="bottom: -20px;" class="carousel-caption">
+                            <h3 id="bannertitle1"></h3>
+                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-rounded" src="" id="banner2" style="width: 100%;" alt="Chania">
+                        <div style="bottom: -20px;" class="carousel-caption">
+                            <h3 id="bannertitle2"></h3>
+                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-rounded" src="" id="banner3" style="width: 100%;" alt="Flower">
+                        <div style="bottom: -20px;" class="carousel-caption">
+                            <h3 id="bannertitle3"></h3>
+                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-rounded" src="vidhanasaudha.jpeg" style="width: 100%;" alt="Flower">
+                        <div style="bottom: -20px;" class="carousel-caption">
+                            <h3>vidhanasaudha</h3>
+                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width: 30%; float:left;padding: 10px;height: 280px;
+                border-radius: 8px; box-shadow: 0 5px 15px grey; background-color: rgb(211, 205, 205);"
+            class="col-xs-3 col-xs-offset-1">
+            <div class="row">
+                <div style="border-radius: 5px; background-color: rgb(177, 157, 157);width: 40%; 
+               box-shadow: 5px 5px 15px; padding: 20px; margin: 20px;" class="col-sm-3">
+                    <div class="card">
+                        <h3>11+</h3>
+                        <p>Partners</p>
+                    </div>
+                </div>
+                <div style="border-radius: 5px;  background-color: rgb(209, 174, 174);width: 40%;
+                box-shadow: 5px 5px 15px; padding: 20px; margin: 18px;" class="col-sm-3">
+                    <div class="card">
+                        <h3>12+</h3>
+                        <p>Partners</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="border-radius: 5px; background-color: rgb(247, 222, 222);width: 90%; 
+               box-shadow: 5px 5px 15px; margin-left: 20px;" class="col-sm-3">
+                    <div class="card">
+                        <h3>13+</h3>
+                        <p>Partners</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#menu1">Menu 1</a></li>
+            <li><a href="#menu2">Menu 2</a></li>
+            <li><a href="#menu3">Menu 3</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <div style="background-color: blanchedalmond;" class="container">
+                    <p>username : </p>
+                    <p>time : </p>
+                    <p>title : </p>
+                    <p>desription : </p>
+
+                    <div class="card">
+                        <img src="nandhi hills.jpeg" alt="Avatar" style="width:35%">
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium,
+                    totam rem aperiam.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3>Menu 3</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    explicabo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon glyphicon-user"></span>
+                                    Username</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>
+                                    Password</label>
+                                <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" checked>Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block"><span
+                                    class="glyphicon glyphicon-off"></span> Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+                                class="glyphicon glyphicon-remove"></span>
+                            Cancel</button>
+                        <p>Not a member? <a href="#">Sign Up</a></p>
+                        <p>Forgot <a href="#">Password?</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
